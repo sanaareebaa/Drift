@@ -1,0 +1,11 @@
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 13px 16px; border-radius: 12px; border: 1px solid var(--olive); background: var(--olive); color: #fff; font-weight: 500; cursor: pointer; }
+.btn.outline { background: var(--surface); color: var(--olive-dark); border-color: var(--sage-line); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.card { background: var(--surface); border: 1px solid var(--sage-line); border-radius: var(--radius); padding: 12px 14px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 20px; border: 0; background: var(--sage); color: var(--olive-dark); font-size: 13px; cursor: pointer; }
+.chip.on { background: var(--olive); color: #fff; }
+.input { width: 100%; padding: 11px 12px; border-radius: 12px; border: 1px solid var(--sage-line); background: var(--surface); color: var(--olive-dark); }
+.circle { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: #fff; font-weight: 500; }
+.bar { height: 6px; border-radius: 3px; background: var(--sage); overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--olive); transition: width .25s; }
+.check { width: 18px; height: 18px; accent-color: var(--olive); }

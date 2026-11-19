@@ -1,0 +1,23 @@
+:root {
+  --olive: #6B7A3A;
+  --olive-dark: #3B4420;
+  --bg: #FAFAF5;
+  --surface: #FFFFFF;
+  --sage: #E4E8D0;
+  --sage-line: #D5DAB8;
+  --terracotta: #C46A3C;
+  --active: #6B7A3A;
+  --completed: #C9A227;
+  --dead: #9A9484;
+  --muted: #8A9068;
+  --radius: 14px;
+  --font: 'DM Sans', system-ui, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+/* #root is a column so a reminder banner can sit above the page and push it down */
+#root { min-height: 100%; display: flex; flex-direction: column; }
+body { background: var(--bg); color: var(--olive-dark); font-family: var(--font); line-height: 1.45; }
+button, input, textarea { font: inherit; }
+:focus-visible { outline: 2px solid var(--olive); outline-offset: 2px; }
+.page { width: 100%; max-width: 480px; flex: 1 0 auto; margin: 0 auto; padding: max(20px, env(safe-area-inset-top)) 20px max(20px, env(safe-area-inset-bottom)); display: flex; flex-direction: column; }

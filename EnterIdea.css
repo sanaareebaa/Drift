@@ -1,0 +1,33 @@
+.enter { gap: 16px; }
+.enter-header { display: flex; align-items: center; gap: 12px; }
+.enter-title { font-size: 24px; font-weight: 500; margin: 0; }
+.enter-back { background: none; border: 0; font-size: 22px; color: var(--olive-dark); cursor: pointer; padding: 4px 8px; border-radius: 12px; }
+
+.enter-body { flex: 1; display: flex; flex-direction: column; gap: 14px; overflow-y: auto; }
+.enter-text { width: 100%; box-sizing: border-box; padding: 14px; font: inherit; font-size: 16px; line-height: 1.5; color: var(--olive-dark); background: var(--surface); border: 1px solid var(--sage-line); border-radius: 16px; resize: vertical; min-height: 140px; }
+.enter-text:focus { outline: 2px solid var(--olive); outline-offset: 1px; }
+
+.enter-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.enter-file { display: inline-flex; align-items: center; padding: 10px 16px; font-size: 14px; color: var(--olive-dark); background: var(--sage, #E4E8D0); border-radius: 999px; cursor: pointer; }
+.enter-file input { display: none; }
+.enter-hint { color: var(--muted); font-size: 13px; margin: 0; }
+.enter-live { color: var(--accent, #C46A3C); }
+
+.enter-thumbs { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.enter-thumb { position: relative; width: 72px; height: 72px; }
+.enter-thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; border: 1px solid var(--sage-line); }
+.enter-thumb button { position: absolute; top: -6px; right: -6px; width: 22px; height: 22px; border-radius: 50%; border: 0; background: var(--olive-dark); color: #fff; font-size: 14px; line-height: 1; cursor: pointer; }
+
+.enter-reminder { border: 1px solid var(--sage-line); border-radius: 16px; padding: 10px 14px 14px; display: flex; flex-direction: column; gap: 10px; background: var(--surface); }
+.enter-reminder legend { font-size: 13px; color: var(--olive); padding: 0 6px; }
+.enter-reminder input[type='datetime-local'] { font: inherit; padding: 8px 10px; border: 1px solid var(--sage-line); border-radius: 10px; color: var(--olive-dark); background: #fff; }
+.enter-channel { display: flex; gap: 16px; font-size: 14px; color: var(--olive-dark); }
+.enter-channel label { display: flex; align-items: center; gap: 6px; }
+
+.enter-msg { font-size: 14px; margin: 0; }
+.enter-error { color: var(--accent, #C46A3C); }
+.enter-success { color: var(--olive); }
+.enter-link { background: none; border: 0; padding: 0; font: inherit; color: var(--olive); text-decoration: underline; cursor: pointer; }
+
+.enter-actions { display: flex; }
+.enter-actions > * { flex: 1; }
